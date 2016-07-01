@@ -29,13 +29,13 @@ Plack::Middleware::SetLocalEnv - Set localized environment variables from the va
 
     use Plack::Builder;
     builder {
-    enable 'SetLocalEnv' =>
-        REQUEST_ID       => "HTTP_X_REQUEST_ID",
-        URL_SCHEME       => "psgi.url_scheme",
-    #   "local %ENV key" => "psgi env key",
-    ;
-    $app;
-};
+        enable 'SetLocalEnv' =>
+            REQUEST_ID       => "HTTP_X_REQUEST_ID",
+            URL_SCHEME       => "psgi.url_scheme",
+        #   "local %ENV key" => "psgi env key",
+        ;
+        $app;
+    };
 
 =head1 DESCRIPTION
 
