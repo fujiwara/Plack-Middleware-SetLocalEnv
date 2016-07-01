@@ -42,6 +42,7 @@
       },
       "runtime" : {
          "requires" : {
+            "Plack" : "0",
             "perl" : "5.008001"
          }
       },
@@ -52,6 +53,17 @@
       }
    },
    "release_status" : "unstable",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/fujiwara/Plack-Middleware-SetLocalEnv/issues"
+      },
+      "homepage" : "https://github.com/fujiwara/Plack-Middleware-SetLocalEnv",
+      "repository" : {
+         "type" : "git",
+         "url" : "git://github.com/fujiwara/Plack-Middleware-SetLocalEnv.git",
+         "web" : "https://github.com/fujiwara/Plack-Middleware-SetLocalEnv"
+      }
+   },
    "version" : "0.01",
    "x_authority" : "cpan:FUJIWARA"
 }
