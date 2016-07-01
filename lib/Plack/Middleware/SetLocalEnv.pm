@@ -11,7 +11,8 @@ sub call {
 
     local %ENV = %ENV;
     for my $key (keys %$self) {
-        $ENV{$key} = $env->{ $self->{$key} };
+        $ENV{$key} = $env->{ $self->{$key} }
+            if exists $env->{$self->{$key}};
     }
     $self->app->($env);
 }
